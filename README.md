@@ -3,4 +3,4 @@
 
 This is my implementation of a game 2048 in WebGL
 
-website : www.2048.hex.ge
+website : <a href="http://www.2048.hex.ge/" target="_blank">www.2048.hex.ge/</a>
