@@ -4,9 +4,6 @@
 
 
 
-//$(document).ready(function(){
-//    console.log = window.alert = window.eval = function(s){};
-//});
 
 
 var colors = {

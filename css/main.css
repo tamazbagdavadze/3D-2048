@@ -24,7 +24,7 @@ body{
 }
 
 .geo, body, button{
-    font-family: 'geo', serif;
+    /*font-family: 'geo', serif;*/
 
     text-shadow: 1px 1px 1px  white;
 
@@ -233,4 +233,14 @@ button:active{
     transform: scale(1.1);
     transition: All 0.3s ease-out;
     border-radius: 10px;
+}
+
+#comments>div{
+    background-color: transparent;
+}
+
+#comments>span{
+    display: block;
+    background-color: transparent;
+
 }

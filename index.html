@@ -31,7 +31,22 @@
 
 <body id="body">
 
-    <div id="controlsContainer">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+
+<div id="controlsContainer">
 
         <div id="controls">
             <label>
@@ -93,6 +108,10 @@
             <span>Rotate cube : use arrows</span>
             <br>
             <span>view and zoom : use mouse</span>
+        </div>
+        <div style="height: 400px !important; overflow-y: scroll">
+            <span>Comment your ideas plz</span>
+            <div class="fb-comments" data-href="http://www.2048.hex.ge" data-width="290" data-version="v2.3" data-numposts="5" data-colorscheme="light"></div>
         </div>
 
 
