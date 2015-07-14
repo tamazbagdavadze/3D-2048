@@ -156,15 +156,14 @@ var colors = {
 
         //$(function() {
         //    $("#game canvas").swipe( {
-        //        //Generic swipe handler for all directions
         //        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-        //            $(this).text("You swiped " + direction );
+        //            //code
         //        }
         //    });
         //});
 
         //$('#game').on('swipe',function(e){
-        //    alert('fgsg');
+        //   //hmm
         //});
 
     }
