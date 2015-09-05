@@ -102,7 +102,7 @@ var colors = {
     function updateGameNum(){
         var gameNum = getGameNum();
         setGameNum(++gameNum);
-        $('#gameNum+span').text(gameNum);
+        $('#gameNum').find('+span').text(gameNum);
     }
 
     function newGame(){
@@ -116,15 +116,15 @@ var colors = {
         cubes = get3DArray(cubeNum);
 
         score = 0;
-        $('#score+span').text(score);
+        $('#score').find('+span').text(score);
 
         fallTime = cubeNum > 5 ? 70 : 140;
 
         newCubeNumPerClick = $('#newCubeNumPerClick').val();
-        multiSum = $("#multiSum+input[type='checkbox']").prop('checked');
+        multiSum = $("#multiSum").find("+input[type='checkbox']").prop('checked');
 
         score = 0;
-        $('#sore+span').text(score);
+        $('#sore').find('+span').text(score);
 
         console.log(multiSum);
 
@@ -252,13 +252,13 @@ var colors = {
     }
 
     function updateScore(curScore){
-        var scoreLabel = $('#score+span');
+        var scoreLabel = $('#score').find('+span');
         score += curScore;
         scoreLabel.text(score);
 
         if(score > getMaxScore()) {
             setMaxScore(score);
-            $('#maxScore+span').text(score);
+            $('#maxScore').find('+span').text(score);
         }
     }
 
@@ -414,8 +414,8 @@ var colors = {
 
     function initScene(){
 
-        $('#maxScore+span').text(getMaxScore());
-        $('#gameNum+span').text(getGameNum());
+        $('#maxScore').find('+span').text(getMaxScore());
+        $('#gameNum').find('+span').text(getGameNum());
 
         document.getElementById("game").appendChild(renderer.domElement);
         scene.add(light);
